@@ -1,0 +1,36 @@
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  background-color: #a78d7a94;
+}
+
+.container {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#projects {
+  padding-top: 1rem;
+  background-color: #a78d7a94;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.card-text {
+  min-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: calibri;
+}
+
+.zoom-container img {
+  transition: transform 0.5s ease; /* Animasi zoom */
+  position: relative;
+}
+
+.zoom-container:hover img {
+  transform: scale(1.7); /* Zoom 1.5 kali lebih besar */
+  z-index: 10;
+}
