@@ -21,6 +21,7 @@ section {
 .frame {
   border: 4px solid #ede4dfe6;
   border-radius: 3px;
+  height: 200px;
 }
 
 .card-text {
