@@ -12,14 +12,14 @@ body {
   font-size: 26px;
 }
 
-.nav-link active {
-  color: #fff 
+.nav-link.active {
+  color: #fff;
   font-size: 18px;
   margin-left: 20px;
 }
 
 .nav-link {
-  color: #94dfdd 
+  color: #94dfdd;
   font-size: 18px;
   margin-left: 20px;
 }
