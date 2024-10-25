@@ -1,42 +1,98 @@
-.jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 1rem;
-  background-color: #a78d7a94;
+body {
+  scroll-behavior: smooth;
+  font-family: "Arial", sans-serif;
 }
 
-.container {
-  padding-top: 2px;
-  padding-bottom: 2px;
+.navbar {
+  background-color: #173837;
 }
 
-#projects {
-  padding-top: 1rem;
-  background-color: #a78d7a94;
+.navbar-brand {
+  color: #fff !important; /* Warna teks normal */
+  font-size: 26px;
 }
 
-section {
-  padding-top: 5rem;
+.nav-link active {
+  color: #fff 
+  font-size: 18px;
+  margin-left: 20px;
 }
 
-.frame {
-  border: 4px solid #ede4dfe6;
-  border-radius: 3px;
-  height: 200px;
+.nav-link {
+  color: #94dfdd 
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+/* Gaya hover untuk navbar link */
+.nav-link:hover {
+  color: #7cf4f0a9 !important;
+}
+
+.section {
+  padding: 85px 0;
+}
+
+#home {
+  background-color: #17383727;
+  height: 370px;
+}
+
+#home img {
+  margin-top: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.272);
+}
+
+h5 {
+  color: #186b64;
+}
+
+#portfolio {
+  background-color: #17383727;
+}
+
+.card {
+  position: relative;
+  height: 280px;
 }
 
 .card-text {
-  min-height: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  font-family: calibri;
+  color: #1e635f;
 }
 
-.zoom-container img {
-  transition: transform 0.5s ease; /* Animasi zoom */
-  position: relative;
+.col-md-4 {
+  margin-bottom: 10px; /* Jarak tambahan di bawah setiap kolom untuk jarak vertikal */
 }
 
-.zoom-container:hover img {
-  transform: scale(1.7); /* Zoom 1.5 kali lebih besar */
-  z-index: 10;
+.card img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Animasi saat transformasi (zoom in/out) */
+}
+
+.card:hover img {
+  transform: scale(1.2);
+  z-index: 10; /* Pastikan gambar yang di-hover berada di atas gambar lainnya */
+  position: relative; /* Membuat z-index berfungsi pada elemen ini */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan shadow saat hover */
+}
+
+#contactForm {
+  width: 100%; /* Lebar form menjadi 100% dari parent container */
+  max-width: 500px; /* Lebar maksimal form */
+  margin: 0 auto; /* Center form di dalam container */
+}
+
+footer {
+  background-color: #173837;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.text-highlight {
+  color: #94dfdd;
 }
