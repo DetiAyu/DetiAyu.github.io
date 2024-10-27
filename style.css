@@ -56,12 +56,13 @@ h5 {
 }
 
 .card {
-  position: relative;
-  height: 260px;
+  transition: transform 0.3s ease;
+  height: 300px;
 }
 
 .card-text {
   color: #481f08;
+  font-size: 14px;
 }
 
 .col-md-4 {
@@ -69,12 +70,13 @@ h5 {
 }
 
 .card img {
-  height: 150px;
-  object-fit: cover;
-  transition: transform 0.3s ease; /* Animasi saat transformasi (zoom in/out) */
+  width: 100%; /* Pastikan gambar memenuhi lebar card */
+  height: auto; /* Menyesuaikan tinggi secara proporsional */
+  object-fit: cover; /* Memastikan gambar tetap proporsional tanpa meregang */
+  transition: transform 0.3s ease;
 }
 
-.card:hover img {
+.card:hover {
   transform: scale(1.3);
   z-index: 10; /* Pastikan gambar yang di-hover berada di atas gambar lainnya */
   position: relative; /* Membuat z-index berfungsi pada elemen ini */
@@ -82,6 +84,13 @@ h5 {
 
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan shadow saat hover */
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    object-fit: contain; /* Pada layar kecil, biarkan gambar menyesuaikan ukuran container */
+    transform: none; /* Hapus efek zoom pada layar kecil */
+  }
 }
 
 #contactForm {
