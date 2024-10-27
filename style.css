@@ -4,12 +4,16 @@ body {
 }
 
 .navbar {
-  background-color: #173837;
+  background-color: #481f08;
 }
 
 .navbar-brand {
   color: #fff !important; /* Warna teks normal */
   font-size: 26px;
+}
+
+.navbar-brand:hover {
+  color: #f4c4aff0 !important;
 }
 
 .nav-link.active {
@@ -19,14 +23,14 @@ body {
 }
 
 .nav-link {
-  color: #b5cfce;
+  color: #c3a390;
   font-size: 16px;
   margin-left: 20px;
 }
 
 /* Gaya hover untuk navbar link */
 .nav-link:hover {
-  color: #7cf4f0a9 !important;
+  color: #f4c4aff0 !important;
 }
 
 .section {
@@ -34,7 +38,7 @@ body {
 }
 
 #home {
-  background-color: #17383727;
+  background-color: #481f0822;
   height: 370px;
 }
 
@@ -44,11 +48,11 @@ body {
 }
 
 h5 {
-  color: #186b64;
+  color: #481f08b7;
 }
 
 #portfolio {
-  background-color: #17383727;
+  background-color: #481f0822;
 }
 
 .card {
@@ -57,7 +61,7 @@ h5 {
 }
 
 .card-text {
-  color: #1e635f;
+  color: #481f08;
 }
 
 .col-md-4 {
@@ -65,7 +69,7 @@ h5 {
 }
 
 .card img {
-  height: 180px;
+  height: 150px;
   object-fit: cover;
   transition: transform 0.3s ease; /* Animasi saat transformasi (zoom in/out) */
 }
@@ -87,12 +91,12 @@ h5 {
 }
 
 footer {
-  background-color: #173837;
+  background-color: #481f08;
   color: #fff;
   text-align: center;
   padding: 20px;
 }
 
 .text-highlight {
-  color: #94dfdd;
+  color: #c3a390;
 }
